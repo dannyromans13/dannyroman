@@ -1,33 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>Untitled</title>
-    <link href="https://fonts.googleapis.com" rel="stylesheet">
-<link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
-<link rel="stylesheet" href="./style.css">
-
-  </head>
-    
-  <body>
-  <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portafolio Personal</title>
-  
-  <link href="https://fonts.googleapis.com" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="styles.css"> -->
-  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danny Román | Portafolio Profesional</title>
+    
+    <!-- Fuentes y Estilos -->
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   
   <header id="main-header">
     <nav class="navbar">
-      <div class="logo">MiPortafolio</div>
+      <div class="logo">Danny<span>Román</span></div>
       <ul class="nav-links">
         <li><a href="#hero">Inicio</a></li>
         <li><a href="#about">Sobre Mí</a></li>
@@ -39,11 +27,11 @@
   </header>
   
   <main>
-    <!-- Sección 1: Hero (Presentación)-->
+    <!-- Sección 1: Hero -->
     <section id="hero" class="fullscreen-section">
       <div class="hero-content">
-        <h1>Hola, soy <span> Danny Roman </span></h1>
-        <p>Estudiante del técnico en desarrollo de aplicaciones de software.</p>
+        <h1>Hola, soy <span>Danny Román</span></h1>
+        <p>Estudiante del técnico en desarrollo de aplicaciones de software con más de 18 años en el sector TI.</p>
         <a href="#contact" class="btn-primary">Hablemos</a>
       </div>
     </section>
@@ -51,13 +39,13 @@
     <!-- Sección 2: Sobre Mí -->
     <section id="about" class="container">
       <h2>Sobre Mí</h2>
-      <div class+"about-flex">
-        <p>Estudiante de este técnico, con más de 18 años de experiencia en el sector de tecnología en transnacionales en Costa Rica. He laborado para varias empresas como Hewlett Packard, IBM y Microsoft entre otras. </p>
+      <div class="about-flex">
+        <p>Estudiante de este técnico, con más de 18 años de experiencia en el sector de tecnología en transnacionales en Costa Rica. He laborado para varias empresas como Hewlett Packard, IBM y Microsoft entre otras.</p>
       </div>
     </section>
     
     <!-- Sección 3: Habilidades -->
-    <section id="Skills" class="container">
+    <section id="skills" class="container">
       <h2>Mis Habilidades</h2>
       <div class="skills-grid">
         <span class="skill-badge">HTML5</span>
@@ -71,14 +59,16 @@
     <section id="projects" class="container">
       <h2>Proyectos Destacados</h2>
       <div class="projects-container">
-        <!-- Requisito 2: Uso de <article>, <figure> y <figcaption> -->
         <article class="project-card">
           <figure>
-            <src="https://via.placeholder.com" alt="Vista previa del proyecto 1">
+            <!-- Corregido: Etiqueta <img> añadida -->
+            <img src="https://via.placeholder.com" alt="Vista previa del proyecto 1">
             <figcaption>Proyecto 1 - Demo Github</figcaption>
           </figure>
-          <p>Descripción breve del proyecto usando selectores descendientes en CSS.</p>
-          <a href="https://github.com/dannyromans13/demo-git" target="_blank">Ver Código</a>
+          <div class="project-info">
+            <p>Descripción breve del proyecto usando selectores descendientes en CSS.</p>
+            <a href="https://github.com/dannyromans13/demo-git" target="_blank" class="project-link">Ver Código</a>
+          </div>
         </article>
       </div>
     </section>
@@ -87,26 +77,25 @@
     <section id="contact" class="container">
       <h2>Contacto</h2>
       <form id="contact-form">
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Correo Electrónico" required>
-        <textarea placeholder="Whatever mensaje" rows="5"></textarea>
-        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+        <div class="form-group">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <textarea placeholder="Tu mensaje aquí..." rows="5" required></textarea>
+            <button type="submit" class="btn-submit">Enviar Mensaje</button>
+        </div>
       </form>
     </section>
   </main>
   
-  <!-- Requisito 2: Footer-->
   <footer>
-    <p>&copy; 2026 Danny Román. Todos los derechos reservados.</p>
+    <div class="footer-content">
+        <p>&copy; 2026 Danny Román. Todos los derechos reservados.</p>
         <div class="social-links">
-          <a href="#"> LinkedIn</a>
-          <a href="#"> Github</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">GitHub</a>
+        </div>
     </div>
   </footer>
         
 </body>
-</html>
-    
-  </body>
-  
 </html>
