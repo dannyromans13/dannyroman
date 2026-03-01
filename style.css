@@ -3,5 +3,7 @@
 :root{
   --primary-color: #2563eb;
   --dark-color: #1e293b;
-  
+  --fuente-principal: 'Roboto' , sans-serif;
+  --bg-color: #f8f9fa;
+  --text-color: #333333
 }
