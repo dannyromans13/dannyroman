@@ -28,6 +28,7 @@ body{
   align-items: center;
   background-color: var(--dark-color);
   padding: 1rem 2rem;
+  width: 100vw
 }
 
 .nav-links{
@@ -69,6 +70,10 @@ body{
   font-size: 1.2rem;
   margin-bottom: 2rem;
   line-height: 1.6;
+}
+
+.hero-content{
+  max-width: calc(100% - 4rem);
 }
 
 .btn-primary{
@@ -225,6 +230,21 @@ h2{
     .footer-content {flex-direction: column; gap: 1rem; text-align: center;}
     .nav-links{gap: 1rem;}
   }
+
+  @media (min-width: 1024px){
+      .projects-container{
+      flex-direction: row;
+    }
+
+    .container {
+      padding: 5rem 3rem;
+    }
+
+    #hero h1{
+      font-size: 3.5rem;
+    }
+  }
+
 
   @media (min-width: 1440px){
     .container{max-width: 1300px;}
