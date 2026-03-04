@@ -54,6 +54,8 @@ body{
   align-items: center;
   padding: 2rem;
   background: linear-gradient(135deg, var(--dark-color), var(--primary-color));
+  background-size: cover;
+  background-position: center;
   color: white;
 }
 
