@@ -28,7 +28,7 @@ body{
   align-items: center;
   background-color: var(--dark-color);
   padding: 1rem 2rem;
-  width: 100vw
+  width: 100vw;
 }
 
 .nav-links{
@@ -102,6 +102,22 @@ h2{
   margin-bottom: 2rem;
   color: var(--dark-color);
 } 
+
+/*---Sobre Mí---*/
+.about-flex{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-flex img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
 
 /* --- Habilidades --- */
 .skills-grid{
