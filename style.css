@@ -259,6 +259,11 @@ h2{
       display: block;
     }
 
+    .project-card{
+      width: 100%; 
+      flex: 1 1 100%;
+    }
+
     .nav-links{
       display: none;
       flex-direction: column;
@@ -274,7 +279,6 @@ h2{
     .nav-links.active{
       display: flex;
     }
-
   }
     
   @media (min-width: 1024px){
