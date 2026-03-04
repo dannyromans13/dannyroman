@@ -240,22 +240,59 @@ h2{
   }
 
   /*--- Media Queries ---*/
-  @media (max-width: 768px){
-    #hero h1{font-size: 2rem ;}
-    .projects-container{flex-direction: column; }
-    .footer-content {flex-direction: column; gap: 1rem; text-align: center;}
-    .nav-links{gap: 1rem;}
+
+.menu-toggle{
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
   }
 
+  @media (max-width: 768px){
+    #hero h1{font-size: 2.5rem;}
+    .projects-container{flex-direction: column;}
+    .footer-content{flex-direction: column; gap: 1rem; text-align: center;}
+
+    .menu-toggle{
+      display: block;
+    }
+
+    .nav-links{
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0; 
+      width: 100%;
+      background-color: var(--dark-color);
+      padding: 1rem;
+      gap: 1rem;
+    }
+  
+    .nav-links.active{
+      display: flex;
+    }
+
+  }
+    
   @media (min-width: 1024px){
+      .nav-links{
+        display: flex !important;
+      }
+
+      .menu-toggle{
+        display: none !important;
+      }
+
       .projects-container{
       flex-direction: row;
-    }
 
-    .container {
-      padding: 5rem 3rem;
+      .container{
+        padding: 5rem 3rem;
+      } 
     }
-
     #hero h1{
       font-size: 3.5rem;
     }
