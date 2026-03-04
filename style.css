@@ -101,7 +101,12 @@ h2{
   font-size: 2rem;
   margin-bottom: 2rem;
   color: var(--dark-color);
+  letter-spacing: 1px;
+  text-transform: uppercase;
 } 
+
+
+
 
 /*---Sobre Mí---*/
 .about-flex{
@@ -239,6 +244,37 @@ h2{
     z-index: 1000;
   }
 
+/*--- Pseudo clases ---*/
+.nav-links li:first-child a{
+  font-weight: 700;
+}
+
+.nav-links li:last-child a{
+  color:#93c5fd; 
+}
+
+.skill-badge:nth-child(odd){
+  opacity: 0.9;
+} 
+
+.form-group input:focus,
+.form-group textarea:focus{
+  outline: 2px solid var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/*--- Pseudo elementos ---*/
+#about p::first-line{
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+/*--- Imagenes responsivas ---*/
+img{
+  max-width: 100%;
+  height: auto;
+}
+
   /*--- Media Queries ---*/
 
 .menu-toggle{
@@ -280,7 +316,22 @@ h2{
       display: flex;
     }
   }
-    
+  
+  @media (min-width: 768px){
+    .about-flex{
+      flex-direction: row;
+    }
+    #hero h1{
+      font-size: 2.5rem;
+    }
+
+    .container{
+     padding: 3rem 2rem;
+    }
+  }
+
+
+
   @media (min-width: 1024px){
       .nav-links{
         display: flex !important;
@@ -292,11 +343,11 @@ h2{
 
       .projects-container{
       flex-direction: row;
-
+      }
       .container{
         padding: 5rem 3rem;
       } 
-    }
+    
     #hero h1{
       font-size: 3.5rem;
     }
